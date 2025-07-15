@@ -1,0 +1,19 @@
+{
+    "server": {
+        "port": 3000,
+        "host": "localhost"
+    },
+    "database": {
+        "url": "mongodb://localhost:27017/authproject",
+        "username": "admin",
+        "password": "password"
+    },
+    "logging": {
+        "level": "info",
+        "filePath": "/var/log/myapp.log"
+    },
+    "security": {
+        "jwtSecret": "your_jwt_secret_key",
+        "encryptionKey": "your_encryption_key"
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "set DEBUG=app:main && nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "set DEBUG=app:* && nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^4.0.0",
+    "debug": "^4.4.1",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "mongoose": "^8.16.3",
+    "mongoose-timestamp": "^0.6.0"
+  }
+}
