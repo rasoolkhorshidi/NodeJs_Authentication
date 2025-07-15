@@ -6,7 +6,7 @@
   "scripts": {
     "start": "set DEBUG=app:main && nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "set DEBUG=app:* && nodemon index.js"
+    "dev": "set DEBUG=app:* && node index.js"
   },
   "keywords": [],
   "author": "",
