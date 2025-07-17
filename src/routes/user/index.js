@@ -3,8 +3,7 @@ const authRouter = express.Router();
 const controller = require("./controller");
 const validator = require("./validator");
 
-authRouter.post("/login", validator.validateLogin, controller.login);
-authRouter.post("/register", validator.validateRegister, controller.register);
-authRouter.post("/logout", validator.validateLogout, controller.logout);
+authRouter.post("/", controller.dashboard);
+authRouter.post("/me", controller.me);
 
 module.exports = authRouter;
