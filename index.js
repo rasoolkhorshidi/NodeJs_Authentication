@@ -4,7 +4,7 @@ const router = require("./src/routes/index");
 const mongoose = require("mongoose");
 const debug = require("debug")("app:main");
 const config = require("config");
-const { User } = require("./src/routes/models/user"); // Assuming you have a User model
+const { User } = require("./src/models/user"); // Assuming you have a User model
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
