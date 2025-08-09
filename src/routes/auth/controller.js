@@ -64,7 +64,7 @@ module.exports = {
         } else {
           const salt = await bcrypt.genSalt(10);
           const hashedPassword = await bcrypt.hash(password, salt);
-          if (admin) {
+          if (admin === "true" || admin === true) {
             // If admin is true, set admin role
             const newUser = new User({
               username,

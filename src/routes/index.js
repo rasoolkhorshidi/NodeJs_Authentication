@@ -8,6 +8,6 @@ const { isLoggedIn, isAdmin } = require("./../middlewares/auth");
 
 router.use("/auth", authRouter);
 router.use("/user", isLoggedIn, userRouter);
-router.use("/admin", isLoggedIn, isAdmin, userRouter);
+router.use("/admin", isLoggedIn, isAdmin, adminRouter);
 
 module.exports = router;
