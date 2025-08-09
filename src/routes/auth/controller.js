@@ -17,7 +17,7 @@ module.exports = {
           // Simulate token generation
           const token = jwt.sign(
             { _id: user.id },
-            config.get("security.jwtSecret") + user._id.toString()
+            config.get("security.jwtSecret")
           );
           return res.status(200).json({
             message: "Login successful",
